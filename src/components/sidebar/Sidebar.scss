@@ -13,6 +13,7 @@
         bottom: 0;
         width: 400px;
         background: white;
+        z-index: 999;
         .links {
             position: absolute;
             width: 100%;
@@ -42,5 +43,6 @@
         left: 25px;
         background-color: transparent;
         border: none;
+        z-index: 999;
     }
 }
