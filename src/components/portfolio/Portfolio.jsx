@@ -33,7 +33,7 @@ const PortfolioItems = [
     heading:
       "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
     content:
-      "When it comes to choosing a writing service, it's important to know that you're working with someone who has experience and a proven track record of delivering quality content. That's why I've included a few examples of my previous work here for your reference. Take a look at some of my past projects and see for yourself the level of quality and attention to detail that I bring to every assignment.",
+      "When it comes to choosing a writing service, it's important to know that you're working with someone who has experience and a proven track record of delivering quality content. ",
     image: Social,
     link: "https://drive.google.com/drive/folders/1TlsKCME_dRkZdIImThyPVxGC2PDVnjjx",
   },
@@ -67,9 +67,6 @@ const Single = ({ item }) => {
           <motion.div className="textContainer" style={{ y }}>
             <h2>{item.title}</h2>
             <p>{item.content}</p>
-            {/* <Link to={item.link}>
-              <button>See Demo</button>
-            </Link> */}
             <a href={item.link} target="_blank" rel="noopener noreferrer">
               <button>See Demo</button>
             </a>
