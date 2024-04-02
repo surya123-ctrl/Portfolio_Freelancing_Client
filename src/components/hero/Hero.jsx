@@ -66,7 +66,7 @@ const Hero = () => {
               animate="animate"
               onClick={() => scrollToSection("Portfolio")}
             >
-              Portfolio
+              PORTFOLIO
             </motion.button>
             <motion.button
               variants={textVariants}
@@ -75,7 +75,7 @@ const Hero = () => {
               onClick={() => scrollToSection("Contact")}
               className="button"
             >
-              Contact Me
+              CONTACT ME
             </motion.button>
           </motion.div>
         </motion.div>

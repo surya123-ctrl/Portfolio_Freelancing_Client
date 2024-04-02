@@ -130,7 +130,7 @@ const Services = () => {
                 <h1>{service.title}</h1>
                 <p>{service.body}</p>
                 <button onClick={() => scrollToSection("Contact")}>
-                  Contact
+                  CONTACT
                 </button>
               </div>
               <img src={service.image} alt={service.title} />

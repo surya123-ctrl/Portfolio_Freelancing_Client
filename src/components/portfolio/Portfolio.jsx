@@ -67,7 +67,7 @@ const Single = ({ item }) => {
             <h2>{item.title}</h2>
             <p>{item.content}</p>
             <a href={item.link} target="_blank" rel="noopener noreferrer">
-              <button>See Demo</button>
+              <button>SEE DEMO</button>
             </a>
           </motion.div>
         </div>
