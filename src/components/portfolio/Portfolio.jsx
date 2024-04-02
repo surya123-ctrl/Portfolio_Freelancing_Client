@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
-import { Link } from "react-router-dom";
-import "./Portfolio.css";
+import "./Portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import ResearchPaper from "../../assets/ResearchPaper.png";
 import Content from "../../assets/Content.png";

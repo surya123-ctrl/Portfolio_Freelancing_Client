@@ -1,9 +1,12 @@
+@import '../../App.scss';
+
 .services {
-    background: linear-gradient(180deg, #0c0c1d, #111132);
+    // background: linear-gradient(180deg, #0c0c1d, #111132);
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    color: #A75D5D;
 
     .textContainer {
         margin-top: 40px;
@@ -12,17 +15,33 @@
         align-items: center;
         gap: 20px;
         margin-bottom: 20px;
+
+        @include mobile {
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
         p {
             font-weight: 200;
             font-size: 20px;
-            color: gray;
+            // color: gray;
             text-align: right;
+
+            @include mobile {
+                margin-left: 100px;
+                margin-right: 10px;
+            }
         }
 
         hr {
             width: 500px;
             border: none;
             border-top: 0.5px solid gray;
+
+            @include mobile {
+                width: 300px;
+            }
         }
     }
 
@@ -39,10 +58,17 @@
 
         .carousel {
             width: 80%;
+
+            @include mobile {
+                width: 100%;
+                margin-bottom: 20%;
+            }
+
             .thumbs-wrapper {
                 display: none;
             }
-            .carousel-container { 
+
+            .carousel-container {
                 position: relative;
                 display: flex;
                 justify-content: center;
@@ -64,30 +90,57 @@
                     h1 {
                         font-size: 50px;
                         text-align: center;
-                        color: aqua;
+                        color: #744141;
+
+                        @include mobile {
+                            font-size: 20px;
+                        }
                     }
 
                     p {
                         font-size: 20px;
                         text-align: center;
+
+                        @include mobile {
+                            font-size: 15px;
+                        }
                     }
+
                     button {
                         margin-top: 1rem;
                         padding: 20px;
-                        background-color: rgb(231, 231, 105);
+                        background-color: transparent;
                         cursor: pointer;
                         border: none;
+                        border: 1px solid black;
+
                         border-radius: 5px;
                         -webkit-border-radius: 5px;
                         -moz-border-radius: 5px;
                         -ms-border-radius: 5px;
                         -o-border-radius: 5px;
-}
+                        transition: all .3s;
+                        -webkit-transition: all .3s;
+                        -moz-transition: all .3s;
+                        -ms-transition: all .3s;
+                        -o-transition: all .3s;
+
+                        &:hover {
+                            color: white;
+                        }
+
+                        @include mobile {
+                            padding: 10px;
+                        }
+
+
+                    }
                 }
 
                 img {
                     width: 100%;
-                    opacity: 0.6; /* Adjust opacity for lighter image */
+                    opacity: 0.4;
+                    /* Adjust opacity for lighter image */
                 }
             }
         }

@@ -1,0 +1,141 @@
+@import "../../App.scss";
+
+.portfolio {
+  position: relative;
+
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: #744141;
+    font-size: 36px;
+
+    @include mobile {
+      padding-top: calc(100vh - 60px);
+      font-size: 18px;
+    }
+
+    .progressBar {
+      height: 10px;
+      background-color: white;
+    }
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+
+      @include mobile {
+        flex-direction: column;
+        gap: 0;
+      }
+
+      .imageContainer {
+        flex: 1;
+        height: 50%;
+        margin-top: 2rem;
+
+        @include mobile {
+          width: 100%;
+          // max-height: 300px;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          margin-top: 1rem;
+          height: 40% !important;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 10px;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+
+          @include mobile {
+            object-fit: contain;
+            width: 80% !important;
+          }
+        }
+      }
+
+      .textContainer {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        margin-top: 3rem;
+
+        @include mobile {
+          transform: none !important;
+          -webkit-transform: none !important;
+          -moz-transform: none !important;
+          -ms-transform: none !important;
+          -o-transform: none !important;
+
+          padding: 10px;
+          align-items: center;
+          text-align: center;
+          margin-top: 0;
+          gap: 10px;
+        }
+
+        h2 {
+          font-size: 72px;
+
+          color: #744141;
+
+          @include mobile {
+            font-size: 36px;
+          }
+        }
+
+        p {
+          // color: #D3756B;
+          font-size: 20px;
+
+          @include mobile {
+            font-size: 12px;
+          }
+        }
+
+        button {
+          background-color: transparent;
+          border: 1px solid black;
+          //border: none;
+          border-radius: 10px;
+          padding: 10px;
+          width: 200px;
+          cursor: pointer;
+          transition: all .3s;
+          -webkit-transition: all .3s;
+          -moz-transition: all .3s;
+          -ms-transition: all .3s;
+          -o-transition: all .3s;
+
+          &:hover {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.scss";
 import HeroImg from "../../assets/HeroImg.jpeg";
 import { motion } from "framer-motion";
+
 const textVariants = {
   initial: {
     x: -500,
@@ -16,12 +17,13 @@ const textVariants = {
     },
   },
 };
+
 const sliderVariants = {
   initial: {
     x: 0,
   },
   animate: {
-    x: "-220%",
+    x: "-520%",
     transition: {
       repeat: Infinity,
       repeatType: "Mirror",
@@ -29,7 +31,15 @@ const sliderVariants = {
     },
   },
 };
+
 const Hero = () => {
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="hero">
       <div className="wrapper">
@@ -43,11 +53,30 @@ const Hero = () => {
           <motion.h1 variants={textVariants}>
             Executive Manager & Content Writer
           </motion.h1>
-          <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the Latest Works
+          <motion.div
+            variants={textVariants}
+            initial="initial"
+            animate="animate"
+            className="buttons"
+          >
+            <motion.button
+              variants={textVariants}
+              className="button"
+              initial="initial"
+              animate="animate"
+              onClick={() => scrollToSection("Portfolio")}
+            >
+              Portfolio
             </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            <motion.button
+              variants={textVariants}
+              initial="initial"
+              animate="animate"
+              onClick={() => scrollToSection("Contact")}
+              className="button"
+            >
+              Contact Me
+            </motion.button>
           </motion.div>
         </motion.div>
       </div>

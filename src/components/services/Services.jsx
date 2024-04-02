@@ -95,6 +95,12 @@ const Services = () => {
       image: Assignment,
     },
   ];
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <motion.div
       className="services"
@@ -123,7 +129,9 @@ const Services = () => {
               <div className="carousel-text">
                 <h1>{service.title}</h1>
                 <p>{service.body}</p>
-                <button>Contact</button>
+                <button onClick={() => scrollToSection("Contact")}>
+                  Contact
+                </button>
               </div>
               <img src={service.image} alt={service.title} />
             </div>
