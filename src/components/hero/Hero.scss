@@ -32,7 +32,7 @@
 
             h2 {
                 font-size: 40px;
-                color: #D3756B;
+                color: #744141;
                 letter-spacing: 3px;
                 font-family: "Playfair Display", serif;
                 font-optical-sizing: auto;
@@ -74,13 +74,14 @@
 
                 .button {
                     padding: 20px;
-                    border: 2px solid rgb(0, 0, 0);
+                    // border: 2px solid rgb(0, 0, 0);
+                    border: none;
                     border-radius: 10px;
                     -webkit-border-radius: 10px;
                     -moz-border-radius: 10px;
                     -ms-border-radius: 10px;
                     -o-border-radius: 10px;
-                    background-color: transparent;
+                    background-color: #FDB5AA;
                     color: rgb(0, 0, 0);
                     margin-right: 20px;
                     cursor: pointer;

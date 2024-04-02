@@ -20,13 +20,6 @@ const Navbar = () => {
         </motion.span>
         <div className="social">
           <a
-            href="https://www.researchgate.net/profile/Divyanshi-Rawat-2"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img src={ResearchGate} alt="ResearchGate" />
-          </a>
-          <a
             href="https://orcid.org/0009-0004-9579-3580"
             target="_blank"
             rel="noreferrer"
@@ -46,6 +39,13 @@ const Navbar = () => {
             rel="noreferrer"
           >
             <img src={LinkedIn} alt="LinkedIn" />
+          </a>
+          <a
+            href="https://www.researchgate.net/profile/Divyanshi-Rawat-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={ResearchGate} alt="ResearchGate" />
           </a>
         </div>
       </div>

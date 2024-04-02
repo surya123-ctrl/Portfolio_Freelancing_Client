@@ -14,7 +14,7 @@ const Parallax = ({ type }) => {
   const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
   return (
     <div className="parallax" ref={ref}>
-      <motion.h1 style={{ y: yText }}>
+      <motion.h1 style={{ y: yText, color: "#744141" }}>
         {type === "services" ? "SERVICES" : "PORTFOLIO"}
       </motion.h1>
       <motion.div className="mountains"></motion.div>

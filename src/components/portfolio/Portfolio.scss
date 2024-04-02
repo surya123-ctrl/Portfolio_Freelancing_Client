@@ -19,7 +19,7 @@
 
     .progressBar {
       height: 10px;
-      background-color: white;
+      background-color: #FDB5AA;
     }
   }
 
@@ -109,7 +109,7 @@
         }
 
         p {
-          // color: #D3756B;
+          color: #000;
           font-size: 20px;
 
           @include mobile {
@@ -118,9 +118,9 @@
         }
 
         button {
-          background-color: transparent;
-          border: 1px solid black;
-          //border: none;
+          background-color: #FDB5AA;
+          // border: 1px solid black;
+          border: none;
           border-radius: 10px;
           padding: 10px;
           width: 200px;

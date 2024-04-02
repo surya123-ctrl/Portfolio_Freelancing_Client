@@ -33,11 +33,18 @@
             @include mobile {
                 display: none;
             }
+
+            color: #FDB5AA;
+
+            span {
+                color: #000;
+            }
         }
 
         h1 {
             font-size: 100px;
             line-height: 88px;
+            color: #744141;
 
             @include mobile {
                 font-size: 50px;
@@ -88,8 +95,8 @@
             textarea {
                 padding: 20px;
                 background-color: transparent;
-                border: 1px solid white;
-                color: white;
+                border: 1px solid #FDB5AA;
+                color: #000;
                 border-radius: 5px;
                 -webkit-border-radius: 5px;
                 -moz-border-radius: 5px;
@@ -107,8 +114,8 @@
                 padding: 20px;
                 border: none;
                 font-size: 1.2rem;
-                background-color: transparent;
-                border: 1px solid black;
+                background-color: #FDB5AA;
+                // border: 1px solid black;
                 font-weight: 500;
                 border-radius: 5px;
                 -webkit-border-radius: 5px;
