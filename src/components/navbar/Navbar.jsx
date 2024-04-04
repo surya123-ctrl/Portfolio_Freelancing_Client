@@ -2,6 +2,7 @@ import React from "react";
 import "./Navbar.scss";
 import Instagram from "../../assets/Instagram.jpg";
 import LinkedIn from "../../assets/LinkedIn.png";
+import Logo from "../../assets/logo.jpeg";
 import ResearchGate from "../../assets/ResearchGate.png";
 import Orcid from "../../assets/Orcid.png";
 import { motion } from "framer-motion";
@@ -16,7 +17,8 @@ const Navbar = () => {
         // animate={{ opacity: 1, scale: 1 }}
         // transition={{ duration: 2 }}
         >
-          DR
+          {/* DR */}
+          <img src={Logo} alt="Instagram" />
         </motion.span>
         <div className="social">
           <a
