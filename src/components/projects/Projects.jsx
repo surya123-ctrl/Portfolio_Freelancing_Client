@@ -19,7 +19,7 @@ const PortfolioItems = [
   },
   {
     id: 2,
-    title: "Content Samples",
+    title: "Honey Bee-Derived Cosmetics and Skincare Products",
     content:
       " Researched and developed cosmetics and skincare products utilizing honey bee wax, propolis, honey, and bee venom. Conducted laboratory studies to analyze the properties of honey bee products and their effects on skin. Investigated potential side effects of direct application.",
     image: Content,
