@@ -1,0 +1,176 @@
+// @import '../../App.scss';
+
+// .projects-container {
+//     display: grid;
+//     gap: 2rem;
+//     grid-template-columns: repeat(3, 1fr);
+//     height: auto;
+//     justify-content: center;
+//     align-items: center;
+//     text-align: center;
+
+//     padding-top: 50px;
+
+//     @include mobile {
+//         grid-template-columns: 1fr;
+//         width: 80%;
+//     }
+
+//     .project {
+
+//         .project-title {
+//             font-size: 1.5rem;
+//             color: #744141;
+//         }
+
+//         .project-description {
+//             margin-top: 1rem;
+//         }
+//     }
+// }
+@import "../../App.scss";
+
+.portfolio {
+    position: relative;
+
+    .progress {
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: #744141;
+        font-size: 36px;
+
+        @include mobile {
+            padding-top: calc(100vh - 60px);
+            font-size: 18px;
+        }
+
+        .progressBar {
+            height: 10px;
+            background-color: #FDB5AA;
+        }
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+
+        .wrapper {
+            max-width: 1366px;
+            height: 100%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            width: 80%;
+
+            @include mobile {
+                flex-direction: column;
+                gap: 0;
+                margin-top: 110px;
+            }
+
+            .imageContainer {
+                flex: 1;
+                height: 50%;
+                margin-top: 2rem;
+
+                @include mobile {
+                    width: 100%;
+                    // max-height: 300px;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+                    margin-top: 1rem;
+                    height: 40% !important;
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    -webkit-border-radius: 30px;
+                    -moz-border-radius: 10px;
+                    -ms-border-radius: 10px;
+                    -o-border-radius: 10px;
+
+                    @include mobile {
+                        object-fit: contain;
+                        width: 80% !important;
+                    }
+                }
+            }
+
+            .textContainer {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                margin-top: 3rem;
+
+                @include mobile {
+                    transform: none !important;
+                    -webkit-transform: none !important;
+                    -moz-transform: none !important;
+                    -ms-transform: none !important;
+                    -o-transform: none !important;
+
+                    padding: 10px;
+                    align-items: center;
+                    text-align: center;
+                    margin-top: 0;
+                    gap: 10px;
+                }
+
+                h2 {
+                    font-size: 50px;
+
+                    color: #744141;
+
+                    @include mobile {
+                        font-size: 36px;
+                    }
+                }
+
+                p {
+                    color: #000;
+                    font-size: 20px;
+
+                    @include mobile {
+                        font-size: 12px;
+                    }
+                }
+
+                button {
+                    background-color: #FDB5AA;
+                    // border: 1px solid black;
+                    border: none;
+                    border-radius: 10px;
+                    padding: 10px;
+                    width: 200px;
+                    cursor: pointer;
+                    transition: all .3s;
+                    -webkit-transition: all .3s;
+                    -moz-transition: all .3s;
+                    -ms-transition: all .3s;
+                    -o-transition: all .3s;
+                    font-family: "Bree Serif", serif;
+                    font-weight: 400;
+                    font-style: normal;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
