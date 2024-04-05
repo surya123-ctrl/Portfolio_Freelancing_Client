@@ -2,7 +2,7 @@ import React from "react";
 import "./Hero.scss";
 import HeroImg from "../../assets/HeroImg.jpeg";
 import { motion } from "framer-motion";
-
+import Resume from "../../assets/Divyanshi_Resume.pdf";
 const textVariants = {
   initial: {
     x: -500,
@@ -59,15 +59,18 @@ const Hero = () => {
             animate="animate"
             className="buttons"
           >
-            <motion.button
-              variants={textVariants}
-              className="button"
-              initial="initial"
-              animate="animate"
-              onClick={() => scrollToSection("Portfolio")}
-            >
-              PORTFOLIO
-            </motion.button>
+            <a href={Resume} download>
+              <motion.button
+                variants={textVariants}
+                className="button"
+                initial="initial"
+                animate="animate"
+                // onClick={() => scrollToSection("Portfolio")}
+              >
+                DOWNLOAD RESUME
+              </motion.button>
+            </a>
+
             <motion.button
               variants={textVariants}
               initial="initial"
