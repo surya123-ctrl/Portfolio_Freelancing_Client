@@ -51,7 +51,7 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>Divyanshi Rawat</motion.h2>
           <motion.h1 variants={textVariants}>
-            Executive Manager & Content Writer
+            Research Consultant & Content Writer
           </motion.h1>
           <motion.div
             variants={textVariants}

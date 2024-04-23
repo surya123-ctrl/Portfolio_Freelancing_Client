@@ -7,14 +7,16 @@ import Services from './components/services/Services'
 import Portfolio from './components/portfolio/Portfolio'
 import Contact from './components/contact/Contact'
 import Projects from './components/projects/Projects'
+import AnimatedCursor from "react-animated-cursor";
 const App = () => {
   return (
     <div>
+      <AnimatedCursor />
       <section id="Home">
         <Navbar />
         <Hero />
       </section>
-      <section id="Portfolio"><Parallax type="portfolio" /></section>
+      <section id="Portfolio"><Parallax type="publications" /></section>
       <Portfolio />
       <section id="Projects"><Parallax type="projects" /></section>
       <Projects />

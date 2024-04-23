@@ -8,44 +8,84 @@ import Assignment from "../../assets/Assignment.png";
 const PortfolioItems = [
   {
     id: 1,
-    title: "Publications",
-    heading:
+    // title: "Publications",
+    title:
       "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
     content:
       "Conducted a systematic literature review of clinical studies regarding the use of essential oil based therapies as an effective weapon against diseases, surveying over 40 papers and identifying major areas of focus. Resulted in the compilation of new evidence base for the potential efficacy of essential oil based therapies.",
     image: ResearchPaper,
-    link: "https://drive.google.com/file/d/1nsSYrJNA--V4INt28Em29Lf3a4JxE-Ro/view",
+    link: "https://drive.google.com/file/d/1jcCI_Iplir1_GL10CCBfGF6KR32Q04pX/view?usp=sharing",
   },
   {
     id: 2,
-    title: "Content Samples",
-    heading:
-      "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
+    // title: "Content Samples",
+    title:
+      "Essential Oils In Organic Agriculture: A Review Of Practices And Potential.",
     content:
-      "Looking for fresh ideas? Check out some of my content and see what sparks your imagination! ",
+      "This review delves into the utilization of essential oils in organic agriculture, exploring current practices and assessing their potential impact on sustainable farming methods, contributing valuable insights to the agricultural community.  ",
     image: Content,
-    link: "https://drive.google.com/drive/folders/1AEzkxhdUx7q3E-Y4RKByt59UiT-xWH7d",
+    link: "https://www.nveo.org/index.php/journal/article/view/5624",
   },
-  {
-    id: 3,
-    title: "Social Media Marketing",
-    heading:
-      "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
-    content:
-      "When it comes to choosing a writing service, it's important to know that you're working with someone who has experience and a proven track record of delivering quality content. ",
-    image: Social,
-    link: "https://drive.google.com/drive/folders/1TlsKCME_dRkZdIImThyPVxGC2PDVnjjx",
-  },
-  {
-    id: 4,
-    title: "Assignment Samples",
-    heading:
-      "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
-    content:
-      "Discover the level of excellence that I bring to every project by browsing through my portfolio of past assignments, which have consistently exceeded clients' expectations.",
-    image: Assignment,
-    link: "https://drive.google.com/drive/folders/1GqdN4OQQB-O5rJJxka3WFBerYucunM3y",
-  },
+  // {
+  //   id: 3,
+  //   title: "Social Media Marketing",
+  //   heading:
+  //     "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
+  //   content:
+  //     "When it comes to choosing a writing service, it's important to know that you're working with someone who has experience and a proven track record of delivering quality content. ",
+  //   image: Social,
+  //   link: "https://drive.google.com/drive/folders/1TlsKCME_dRkZdIImThyPVxGC2PDVnjjx",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Assignment Samples",
+  //   heading:
+  //     "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
+  //   content:
+  //     "Discover the level of excellence that I bring to every project by browsing through my portfolio of past assignments, which have consistently exceeded clients' expectations.",
+  //   image: Assignment,
+  //   link: "https://drive.google.com/drive/folders/1GqdN4OQQB-O5rJJxka3WFBerYucunM3y",
+  // },
+  // {
+  //   id: 1,
+  //   title: "Publications",
+  //   heading:
+  //     "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
+  //   content:
+  //     "Conducted a systematic literature review of clinical studies regarding the use of essential oil based therapies as an effective weapon against diseases, surveying over 40 papers and identifying major areas of focus. Resulted in the compilation of new evidence base for the potential efficacy of essential oil based therapies.",
+  //   image: ResearchPaper,
+  //   link: "https://drive.google.com/file/d/1nsSYrJNA--V4INt28Em29Lf3a4JxE-Ro/view",
+  // },
+  // {
+  //   id: 2,
+  //   title: "Content Samples",
+  //   heading:
+  //     "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
+  //   content:
+  //     "Looking for fresh ideas? Check out some of my content and see what sparks your imagination! ",
+  //   image: Content,
+  //   link: "https://drive.google.com/drive/folders/1AEzkxhdUx7q3E-Y4RKByt59UiT-xWH7d",
+  // },
+  // {
+  //   id: 3,
+  //   title: "Social Media Marketing",
+  //   heading:
+  //     "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
+  //   content:
+  //     "When it comes to choosing a writing service, it's important to know that you're working with someone who has experience and a proven track record of delivering quality content. ",
+  //   image: Social,
+  //   link: "https://drive.google.com/drive/folders/1TlsKCME_dRkZdIImThyPVxGC2PDVnjjx",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Assignment Samples",
+  //   heading:
+  //     "Review Paper on Essential Oil Based Therapies as an Effective Weapon Against Diseases.",
+  //   content:
+  //     "Discover the level of excellence that I bring to every project by browsing through my portfolio of past assignments, which have consistently exceeded clients' expectations.",
+  //   image: Assignment,
+  //   link: "https://drive.google.com/drive/folders/1GqdN4OQQB-O5rJJxka3WFBerYucunM3y",
+  // },
 ];
 const Single = ({ item }) => {
   const ref = useRef();
